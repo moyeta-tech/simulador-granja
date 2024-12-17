@@ -6,6 +6,12 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    setWindowTitle("Simulador de Granja");
+
+    ui->tableWidget->setColumnCount(3);
+
+    ui->tableWidget->setHorizontalHeaderLabels(QStringList() << "Nombre" << "Tiempo" << "Estado");
 }
 
 MainWindow::~MainWindow()
